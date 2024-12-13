@@ -1,5 +1,8 @@
 // 配置 VitePress 文档
 // https://vitepress.dev/reference/site-config
+import { BiDirectionalLinks } from "@nolebase/markdown-it-bi-directional-links"; //双向链接
+import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-inline-link-preview/markdown-it"; //行内链接预览
+
 import { defineConfig } from "vitepress";
 import { head, nav } from "./configs";
 
@@ -10,6 +13,13 @@ export default defineConfig({
   description: "Lintern | 个人自留地", //SEO
   ignoreDeadLinks: true, // 忽略死链接检测
   head,
+  //Markdown语法配置
+  markdown: {
+    config: (md) => {
+      md.use(BiDirectionalLinks()); //双向链接
+      md.use(InlineLinkPreviewElementTransform); //行内链接预览
+    },
+  },
 
   // 主题配置
   themeConfig: {

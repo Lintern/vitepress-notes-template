@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "关于我.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "关于我"
             }
           }
         ]
@@ -164,8 +164,8 @@
   },
   "active": "d8589097a90b90c5",
   "lastOpenFiles": [
-    "关于我.md",
     "index.md",
+    "关于我.md",
     "🧰软件工具/index.md",
     "🐞踩坑记录/index.md",
     "🐞踩坑记录",

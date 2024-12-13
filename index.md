@@ -1,25 +1,32 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: Lintern
+  text: 记录回忆，知识，生活
+  tagline: "专注 & 洞察 & 分享"
+  image:
+    src: /logo.png
   actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
-
+    - text: 笔记
+      link: /Notes
+    - text: 在 Github 上浏览
+      link: https://github.com/Lintern/vitepress-obsidian-template
+      theme: alt
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 📒
+    title: 笔记
+    details: 日常笔记零零散散啥都写
+    link: /Notes
+    linkText: 笔记
+  - icon: 🧰
+    title: 软件工具
+    details: 收集到的 好用、好玩的软件、插件、扩展等
+    link: /Notes/🧰软件工具
+    linkText: 软件工具
+  - icon: 🐞
+    title: 踩坑记录
+    details: 那些年我们踩过的坑<br />总有一些让你意想不到的问题
+    link: /Notes/🐞踩坑记录
+    linkText: 踩坑记录
 ---
-
