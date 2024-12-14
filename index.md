@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Lintern
   text: 记录回忆，知识，生活
-  tagline: "专注 & 洞察 & 分享"
+  tagline: 个人自留地
   image:
     src: /logo.png
   actions:
