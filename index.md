@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: Lintern
-  text: 记录回忆，知识，生活
+  text:
   tagline: 个人自留地
   image:
     src: /logo.png

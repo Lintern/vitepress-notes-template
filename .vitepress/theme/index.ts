@@ -4,7 +4,9 @@ import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import "./style.css";
 
-import MyLayout from "./components/MyLayout.vue"; //自定义模块
+import "./style/index.css"; //导入自定义样式
+
+import MyLayout from "./components/MyLayout.vue"; //导入自定义模块
 
 import { NolebaseInlineLinkPreviewPlugin } from "@nolebase/vitepress-plugin-inline-link-preview/client"; //导入行内链接预览
 import "@nolebase/vitepress-plugin-inline-link-preview/client/style.css"; //导入行内链接预览样式

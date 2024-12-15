@@ -63,6 +63,10 @@ import "@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css"; //�
 
 <template>
   <DefaultTheme.Layout>
+    <template #home-hero-info-before>
+      <h1><p data-v-260f81fe class="text">你好！这里是</p></h1>
+      <!-- 1 -->
+    </template>
     <template #nav-bar-content-after>
       <NolebaseEnhancedReadabilitiesMenu />
       <!-- 为较宽的屏幕的导航栏插入布局切换、聚光灯按钮 -->
