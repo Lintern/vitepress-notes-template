@@ -1,4 +1,6 @@
 {
   "attachmentFolderPath": "assets",
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "defaultViewMode": "source",
+  "livePreview": true
 }

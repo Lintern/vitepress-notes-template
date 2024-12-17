@@ -2,7 +2,10 @@
 // https://vitepress.dev/reference/site-config
 import { BiDirectionalLinks } from "@nolebase/markdown-it-bi-directional-links"; //双向链接
 import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-inline-link-preview/markdown-it"; //行内链接预览
-
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin,
+} from "vitepress-plugin-group-icons"; //代码块图标 标题支持
 import { defineConfig } from "vitepress";
 import { head, nav } from "./configs";
 
@@ -13,12 +16,19 @@ export default defineConfig({
   description: "Lintern | 个人自留地", //SEO
   ignoreDeadLinks: true, // 忽略死链接检测
   head,
+
   //Markdown语法配置
   markdown: {
+    lineNumbers: true, //行号显示
     config: (md) => {
+      md.use(groupIconMdPlugin); //代码块图标 标题支持
       md.use(BiDirectionalLinks()); //双向链接
       md.use(InlineLinkPreviewElementTransform); //行内链接预览
     },
+  },
+
+  vite: {
+    plugins: [groupIconVitePlugin()], //代码块图标 标题支持
   },
 
   // 主题配置

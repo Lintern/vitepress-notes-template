@@ -64,8 +64,7 @@ import "@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css"; //�
 <template>
   <DefaultTheme.Layout>
     <template #home-hero-info-before>
-      <h1><p data-v-260f81fe class="text">你好！这里是</p></h1>
-      <!-- 1 -->
+      <h1><p class="text">你好！这里是</p></h1>
     </template>
     <template #nav-bar-content-after>
       <NolebaseEnhancedReadabilitiesMenu />
@@ -99,12 +98,35 @@ import "@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css"; //�
   z-index: 9999;
 }
 
-/* 调整切换按钮的样式 */
-/* .VPSwitchAppearance {
+/* 调整切换深浅主题按钮的样式 */
+.VPSwitchAppearance {
   width: 22px !important;
-} */
-
-/* .VPSwitchAppearance .check {
+}
+.VPSwitchAppearance .check {
   transform: none !important;
-} */
+}
+/*----------------------------------------------------------------------------*/
+/*主页中插入的class="text"的样式*/
+.text {
+  max-width: 392px;
+  letter-spacing: -0.4px;
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  white-space: pre-wrap;
+}
+@media (min-width: 640px) {
+  .text {
+    max-width: 576px;
+    line-height: 56px;
+    font-size: 48px;
+  }
+}
+@media (min-width: 960px) {
+  .text {
+    line-height: 64px;
+    font-size: 56px;
+  }
+}
+/*----------------------------------------------------------------------------*/
 </style>

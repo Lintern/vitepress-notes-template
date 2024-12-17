@@ -1,0 +1,13 @@
+/* 浅色模式下的代码块 */
+.vp-code-block-title,
+.vp-code-group {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4); /* 阴影 */
+  border-radius: 8px; /* 圆角 */
+}
+
+/* 深色模式下的代码块 */
+.dark .vp-code-block-title,
+.dark .vp-code-group {
+  box-shadow: 0 5px 30px rgba(150, 150, 150, 0.4); /* 阴影 */
+  border-radius: 8px; /* 圆角 */
+}

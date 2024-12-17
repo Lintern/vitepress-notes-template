@@ -3,7 +3,7 @@ import { h } from "vue";
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import "./style.css";
-
+import "virtual:group-icons.css"; //代码块图标 标题支持样式
 import "./style/index.css"; //导入自定义样式
 
 import MyLayout from "./components/MyLayout.vue"; //导入自定义模块
