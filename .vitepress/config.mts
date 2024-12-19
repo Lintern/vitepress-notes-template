@@ -2,19 +2,22 @@
 // https://vitepress.dev/reference/site-config
 import { BiDirectionalLinks } from "@nolebase/markdown-it-bi-directional-links"; //双向链接
 import { InlineLinkPreviewElementTransform } from "@nolebase/vitepress-plugin-inline-link-preview/markdown-it"; //行内链接预览
+// import { calculateSidebar } from "@nolebase/vitepress-plugin-sidebar"; //自动生成侧边栏
 import {
   groupIconMdPlugin,
   groupIconVitePlugin,
 } from "vitepress-plugin-group-icons"; //代码块图标 标题支持
 import { defineConfig } from "vitepress";
-import { head, nav } from "./configs";
+import { head } from "./configs";
+// 引入侧边栏配置
+import { sidebar, nav } from "./docsMetadata.json";
 
 export default defineConfig({
   outDir: "./dist", //构建目录
   lang: "zh-CN",
   title: "Lintern | 个人自留地", //网页标签标题
   description: "Lintern | 个人自留地", //SEO
-  ignoreDeadLinks: true, // 忽略死链接检测
+  lastUpdated: true,
   head,
 
   //Markdown语法配置
@@ -37,7 +40,6 @@ export default defineConfig({
     // logo: "/logo.png",//标题图标
 
     nav,
-
     /* 右侧大纲配置 */
     outline: {
       level: "deep",
@@ -50,7 +52,12 @@ export default defineConfig({
     },
 
     // 配置侧边栏
-    // sidebar: {}
+    sidebar,
+    // 配置侧边栏
+    // sidebar: calculateSidebar([
+    //   { folderName: "doc/笔记", separate: true },
+    //   { folderName: "doc/测试", separate: true },
+    // ]),
 
     // 配置社交链接，显示在顶部导航栏中
     socialLinks: [

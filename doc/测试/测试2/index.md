@@ -1,12 +1,16 @@
-# 测试元素
+# 测试元素 2
 
-> 更新时间：2024年
+> 更新时间：2024 年
 
 ## 超链接样式
+
 - [未访问的链接](https://www.bilibili.html)
-- [[测试|已访问的链接]]
+- [[https://www.bilibili.html|已访问的链接]]
+
 ## 代码块样式
+
 ### 基础
+
 ```css [.css]
 /* 浅色模式下的代码块 */
 .vp-code-block-title,
@@ -17,32 +21,38 @@
 ```
 
 ### 标题
+
 ```sh [yarn]
 #查询yarn版本
 yarn -v
 ```
+
 ### 混合
+
 ::: code-group
+
 ```sh [vp-code-title.css]
 #查询pnpm版本
 pnpm -v
 ```
+
 ```sh [yarn]
 #查询yarn版本
 yarn -v
 ```
+
 :::
 
-## Badge样式
+## Badge 样式
 
->[!info] info 注释
->注释是灰色
+> [!info] info 注释
+> 注释是灰色
 
->[!tip] 提示
->提示是绿色 
+> [!tip] 提示
+> 提示是绿色
 
->[!warning] 警告
->警告是橘色
+> [!warning] 警告
+> 警告是橘色
 
->[!danger] 危险
->危险是红色
+> [!danger] 危险
+> 危险是红色

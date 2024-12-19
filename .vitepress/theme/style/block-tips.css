@@ -4,9 +4,11 @@
   padding: 18px 20px 20px 15px;
   position: relative;
   background-color: var(--vp-c-gray-soft);
-  border-left: 6px solid var(--vp-c-purple-3);
+  border-left: 6px solid var(--vp-c-brand-1);
 }
-
+/* .vp-doc blockquote .dark {
+  border-left: 6px solid var(--vp-c-brand-dark);
+} */
 /* 浅色卡 */
 :root {
   --custom-block-info-left: #b7b7b7;

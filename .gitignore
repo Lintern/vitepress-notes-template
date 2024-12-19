@@ -3,6 +3,7 @@ dist
 .temp
 cache
 .vscode
+.obsidian
 
 # Log
 npm-debug.log*
