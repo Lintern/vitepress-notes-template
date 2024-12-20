@@ -1,5 +1,3 @@
-<!-- .vitepress/theme/MyLayout.vue -->
-
 <script setup lang="ts">
 import { useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";
@@ -99,12 +97,12 @@ import "@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css"; //�
 }
 
 /* 调整切换深浅主题按钮的样式 */
-.VPSwitchAppearance {
+/* .VPSwitchAppearance {
   width: 22px !important;
 }
 .VPSwitchAppearance .check {
   transform: none !important;
-}
+} */
 /*----------------------------------------------------------------------------*/
 /*主页中插入的class="text"的样式*/
 .text {

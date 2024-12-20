@@ -3,68 +3,16 @@
 @import "./block-code.css"; /*代码块*/
 @import "./nav.css"; /*导航栏*/
 @import "./hidden.css"; /*隐藏横条*/
-
 /*-------------------网页背景颜色-----------------------*/
 :root {
-  --vp-c-bg: #fff;
+  --vp-c-bg: #f9fafb;
   --vp-c-brand-lightest: var(--vp-c-brand-1);
+  /* --vp-sidebar-bg-color: #eaecf0; */
 }
 .dark {
-  --vp-c-bg: #1b1b1f;
+  --vp-c-bg: #17191c;
 }
 /*======================================================*/
-/*-------------------彩虹色卡作用到----------------------*/
-:root {
-  /* 标题渐变色 */
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    var(--vp-c-brand-1) 0%,
-    var(--vp-c-brand-next)
-  );
-  /* logo背景渐变色 */
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    var(--vp-c-brand-1) 0%,
-    var(--vp-c-brand-next)
-  );
-  --vp-home-hero-image-filter: blur(80px); /* 对背景应用模糊效果 */
-}
-@media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(
-      120px
-    ); /* 在屏幕宽度大于 640px 时，背景的模糊效果增加到 120px */
-  }
-}
-@media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(
-      120px
-    ); /* 在屏幕宽度大于 960px 时，保持背景的模糊效果为 120px */
-  }
-}
-.link-text,/* 主页卡片的文字颜色 */
-.link.active,/* 导航栏的文字颜色 */
-.link.active span,
-.VPNavBarMenuLink:hover span,
-.VPSidebarItem.is-active .link,
-.VPSidebar .link:hover {
-  color: var(--vp-c-brand-1);
-}
-/* 搜索框的颜色 */
-.DocSearch {
-  --docsearch-primary-color: var(--vp-c-brand-1) !important;
-}
-:root {
-  --vp-button-brand-bg: var(--vp-c-brand-1); /*按钮颜色 */
-}
-.browser-safari,
-.browser-firefox {
-  --vp-home-hero-image-background-image: transparent; /* Safari 和 Firefox 上将背景图设置为透明 */
-  --vp-home-hero-image-filter: ""; /* Safari 和 Firefox 上移除模糊效果 */
-}
-/*================================================*/
 
 /*-----------超链接样式----------------------------*/
 .vp-doc a {
@@ -76,3 +24,20 @@
   font-weight: bold;
 }
 /*================================================*/
+@media (min-width: 640px){
+
+}
+
+:root .vp-nolebase-git-changelog-history-container{
+  background-color:#EFF0F3
+}
+.dark .vp-nolebase-git-changelog-history-container{
+  background-color:#272A2F
+}
+
+
+/* 隐藏上下页按钮 */
+
+:root a.VPLink.link.pager-link.next {
+  display: none !important;
+}

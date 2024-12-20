@@ -2,7 +2,9 @@
   "devDependencies": {
     "@nolebase/markdown-it-bi-directional-links": "^2.11.1",
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.11.1",
+    "@nolebase/vitepress-plugin-git-changelog": "^2.11.1",
     "@nolebase/vitepress-plugin-inline-link-preview": "^2.11.1",
+    "@types/dom-view-transitions": "^1.0.5",
     "@types/node": "^22.10.2",
     "tsx": "^4.19.2",
     "vitepress": "^1.5.0",
@@ -13,6 +15,6 @@
     "dev": "pnpm run update && vitepress dev --port=5819",
     "build": "pnpm run update && vitepress build",
     "preview": "vitepress preview",
-    "update": "tsx scripts/generateSidebar.ts"
+    "update": "tsx scripts/generateSidebarNav.ts"
   }
 }
